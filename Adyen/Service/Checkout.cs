@@ -486,7 +486,7 @@ namespace Adyen.Service
         /// </summary>
         /// <param name="paymentDonationRequest"></param>
         /// <returns>StandalonePaymentCancelResource</returns>
-        public async Task<DonationResponse> DonationsAsync( PaymentDonationRequest paymentDonationRequest)
+        public async Task<DonationResponse> DonationsAsync(PaymentDonationRequest paymentDonationRequest)
         {
             var jsonRequest = Util.JsonOperation.SerializeRequest(paymentDonationRequest);
             var jsonResponse = await _donations.RequestAsync(jsonRequest);
